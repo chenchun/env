@@ -1,0 +1,7 @@
+[user]
+	name = Chun Chen
+	email = chenchun.feed@gmail.com
+[alias]
+	st = status
+	co = checkout
+   	br = branch -v  
