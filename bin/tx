@@ -1,0 +1,1 @@
+tmux attach -t rami || tmux new -s rami
