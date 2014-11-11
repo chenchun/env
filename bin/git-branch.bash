@@ -1,11 +1,6 @@
 #! /bin/sh
-
-function parse_git_branch {
-    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' -e 's/((/(/' -e 's/))/)/'
-}
-function proml {
-    local GREEN="\[\033[0;32m\]"
-    local COLOR_END="\033[0m"
-    PS1="[${PS1}$GREEN\$(parse_git_branch)$COLOR_END]\$ "
-}
-proml
+source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
+BLUE="\[\033[1;36m\]"
+GREEN="\[\033[0;32m\]"
+COLOR_END="\[\033[0m\]"
+PS1="$BLUE\u$COLOR_END:$GREEN\W$COLOR_END\$(__git_ps1)$GREEN $ $COLOR_END"
