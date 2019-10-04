@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "Quiet Light",
+    "window.title": "${activeEditorMedium}",
+    //"clang.executable": "/usr/bin/clang-6.0",
+    //"http.proxy": "http://example.com:8080",
+    "http.proxyStrictSSL": false,
+    "workbench.editor.enablePreview": false,
+    "go.inferGopath": true,
+    "go.toolsEnvVars": {"GOOS" : "linux"},
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all"
+}
